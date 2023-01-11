@@ -1,0 +1,3 @@
+[ 2023-01-05 19:29:10,407 ] 10 root - INFO - Reading Data from Database:aps and collection:sensor
+[ 2023-01-05 19:29:10,412 ] 12 root - INFO - Found columns: Index([], dtype='object')
+[ 2023-01-05 19:29:10,412 ] 16 root - INFO - Row and columns in df: (0, 0)

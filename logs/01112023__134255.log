@@ -1,0 +1,51 @@
+[ 2023-01-11 13:42:56,472 ] 15 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-01-11 13:42:56,472 ] 22 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-01-11 13:42:56,472 ] 11 root - INFO - Reading Data from Database:aps and collection:sensor
+[ 2023-01-11 13:42:59,967 ] 13 root - INFO - Found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2023-01-11 13:42:59,967 ] 15 root - INFO - Dropping column: _id 
+[ 2023-01-11 13:43:00,161 ] 17 root - INFO - Row and columns in df: (36188, 171)
+[ 2023-01-11 13:43:00,161 ] 27 root - INFO - replacing na values
+[ 2023-01-11 13:43:00,722 ] 32 root - INFO - Save data in feature store
+[ 2023-01-11 13:43:00,722 ] 34 root - INFO - Create feature store folder if not available
+[ 2023-01-11 13:43:00,722 ] 39 root - INFO - Save df to feature store folder
+[ 2023-01-11 13:43:03,176 ] 45 root - INFO - split dataset into train and test set
+[ 2023-01-11 13:43:03,903 ] 49 root - INFO - create dataset directory folder if not available
+[ 2023-01-11 13:43:03,904 ] 54 root - INFO - Save df to feature store folder
+[ 2023-01-11 13:43:06,142 ] 69 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/01112023__134256/data_ingestion/feature_store/sensor.csv', train_file_path='/config/workspace/artifact/01112023__134256/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/01112023__134256/data_ingestion/dataset/test.csv')
+[ 2023-01-11 13:43:06,627 ] 22 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-01-11 13:43:06,628 ] 11 root - INFO - Reading Data from Database:aps and collection:sensor
+[ 2023-01-11 13:43:10,265 ] 13 root - INFO - Found columns: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[ 2023-01-11 13:43:10,265 ] 15 root - INFO - Dropping column: _id 
+[ 2023-01-11 13:43:10,459 ] 17 root - INFO - Row and columns in df: (36188, 171)
+[ 2023-01-11 13:43:10,459 ] 27 root - INFO - replacing na values
+[ 2023-01-11 13:43:11,050 ] 32 root - INFO - Save data in feature store
+[ 2023-01-11 13:43:11,050 ] 34 root - INFO - Create feature store folder if not available
+[ 2023-01-11 13:43:11,051 ] 39 root - INFO - Save df to feature store folder
+[ 2023-01-11 13:43:13,478 ] 45 root - INFO - split dataset into train and test set
+[ 2023-01-11 13:43:14,109 ] 49 root - INFO - create dataset directory folder if not available
+[ 2023-01-11 13:43:14,109 ] 54 root - INFO - Save df to feature store folder
+[ 2023-01-11 13:43:16,332 ] 69 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/01112023__134256/data_ingestion/feature_store/sensor.csv', train_file_path='/config/workspace/artifact/01112023__134256/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/01112023__134256/data_ingestion/dataset/test.csv')
+[ 2023-01-11 13:43:16,723 ] 156 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-01-11 13:43:16,723 ] 244 root - INFO - Reading base dataframe
+[ 2023-01-11 13:43:19,694 ] 247 root - INFO - Replace na value in base df
+[ 2023-01-11 13:43:19,694 ] 249 root - INFO - Drop null values colums from base df
+[ 2023-01-11 13:43:20,626 ] 178 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-01-11 13:43:20,626 ] 181 root - INFO - Columns to drop: ['ab_000', 'ad_000', 'bk_000', 'bl_000', 'bm_000', 'bn_000', 'bo_000', 'bp_000', 'bq_000', 'br_000', 'cf_000', 'cg_000', 'ch_000', 'co_000', 'cr_000', 'ct_000', 'cu_000', 'cv_000', 'cx_000', 'cy_000', 'cz_000', 'da_000', 'db_000', 'dc_000']
+[ 2023-01-11 13:43:20,738 ] 252 root - INFO - Reading train dataframe
+[ 2023-01-11 13:43:21,126 ] 254 root - INFO - Reading test dataframe
+[ 2023-01-11 13:43:21,226 ] 257 root - INFO - Drop null values colums from train df
+[ 2023-01-11 13:43:21,237 ] 178 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-01-11 13:43:21,238 ] 181 root - INFO - Columns to drop: ['ab_000', 'ad_000', 'bk_000', 'bl_000', 'bm_000', 'bn_000', 'bo_000', 'bp_000', 'bq_000', 'br_000', 'cf_000', 'cg_000', 'ch_000', 'co_000', 'cr_000', 'ct_000', 'cu_000', 'cv_000', 'cx_000', 'cy_000', 'cz_000', 'da_000', 'db_000', 'dc_000']
+[ 2023-01-11 13:43:21,247 ] 259 root - INFO - Drop null values colums from test df
+[ 2023-01-11 13:43:21,251 ] 178 root - INFO - selecting column name which contains null above to 0.2
+[ 2023-01-11 13:43:21,251 ] 181 root - INFO - Columns to drop: ['ab_000', 'ad_000', 'bk_000', 'bl_000', 'bm_000', 'bn_000', 'bo_000', 'bp_000', 'bq_000', 'br_000', 'cf_000', 'cg_000', 'ch_000', 'co_000', 'cr_000', 'ct_000', 'cu_000', 'cv_000', 'cx_000', 'cy_000', 'cz_000', 'da_000', 'db_000', 'dc_000']

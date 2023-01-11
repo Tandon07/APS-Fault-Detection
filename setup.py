@@ -15,7 +15,8 @@ def get_requirements()->List[str]:
     requirement_list = [requirement_name.replace("\n", "") for requirement_name in requirement_list]
     
     if HYPHEN_E_DOT in requirement_list:
-        requirement_list.remove(HYPHEN_E_DOT)
+        requirement_list.remove(HYPHEN_E_DOT)    
+        # because it is not a library that's why we newed tyo remove it
     return requirement_list
 
 
