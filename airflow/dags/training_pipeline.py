@@ -40,4 +40,8 @@ with DAG(
 
     )
 
+<<<<<<< HEAD
     training_pipeline >> sync_data_to_s3
+=======
+    training_pipeline >> sync_data_to_s3
+>>>>>>> 42f97a705aecc8638d6fcda5295b3a055e2f2c6b

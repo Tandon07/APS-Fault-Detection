@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # this fileid reqd bcz we want to run this project  
 
+=======
+>>>>>>> 42f97a705aecc8638d6fcda5295b3a055e2f2c6b
 version: "2"
 services:
  application:
