@@ -1,8 +1,12 @@
 import pymongo
 import pandas as pd
 import json
+from dotenv import load_dotenv
 # Provide the mongodb localhost url to conpytjon ct python to mongodb.
-client = pymongo.MongoClient("mongodb://localhost:27017/neurolabDB")
+
+from sensor.config import mongo_client
+
+
 
 data_file_path='/config/workspace/aps_failure_training_set1.csv'
 Database_name='aps'
@@ -21,4 +25,4 @@ df.reset_index(drop=True,inplace=True)
 json_record=list(json.loads(df.T.to_json()).values())
 print(json_record[0])
 
-client[Database_name][collection_name].insert_many(json_record)
+mongo_client[Database_name][collection_name].insert_many(json_record)

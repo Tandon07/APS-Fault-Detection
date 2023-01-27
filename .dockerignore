@@ -1,0 +1,14 @@
+artifact
+logs
+notebook
+prediction
+saved_models
+*.egg_info
+
+batch_prediction.py
+data_dump.py
+main.py
+README.md
+revision.pdf
+test.ipynb
+train.py
