@@ -131,6 +131,9 @@ class DataValidation:
             test_df = utils.convert_columns_float(df=test_df, exclude_columns=exclude_columns)
 
 
+
+
+
             logging.info(f"Is all required columns present in train df")
             train_df_columns_status = self.is_required_columns_exists(base_df=base_df, current_df=train_df,report_key_name="missing_columns_within_train_dataset")
             logging.info(f"Is all required columns present in test df")

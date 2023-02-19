@@ -85,6 +85,7 @@ class DataTransformation:
             test_arr = np.c_[input_feature_test_arr, target_feature_test_arr]
 
 
+
             #save numpy array
             utils.save_numpy_array_data(file_path=self.data_transformation_config.transformed_train_path,
                                         array=train_arr)
