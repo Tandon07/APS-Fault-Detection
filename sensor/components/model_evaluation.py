@@ -54,6 +54,7 @@ class ModelEvaluation:
             model = load_object(file_path=model_path)
             target_encoder = load_object(file_path=target_encoder_path)
             
+            
 
             logging.info("Currently trained model objects")
             #Currently trained model objects

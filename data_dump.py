@@ -9,7 +9,7 @@ from sensor.config import mongo_client
 
 
 data_file_path='/config/workspace/aps_failure_training_set1.csv'
-Database_name='aps'
+Database_name='aps1'
 collection_name='sensor'
 
 
